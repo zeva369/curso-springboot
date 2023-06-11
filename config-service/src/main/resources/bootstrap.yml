@@ -1,3 +1,17 @@
 server:
   port: 8081
-  
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zeva369/curso-springboot.git
+          searchPaths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PWD}
+  security:
+    user: root
+    password: s3cr3t
+
+
