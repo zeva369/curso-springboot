@@ -1,4 +1,4 @@
-package academy.digitallab.store.customer;
+package com.seva.customer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

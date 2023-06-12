@@ -1,4 +1,4 @@
-package academy.digitallab.store.customer.repository.entity;
+package com.seva.customer.repository.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

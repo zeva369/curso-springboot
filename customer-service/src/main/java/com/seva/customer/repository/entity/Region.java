@@ -1,4 +1,4 @@
-package academy.digitallab.store.customer.repository.entity;
+package com.seva.customer.repository.entity;
 
 import lombok.Data;
 

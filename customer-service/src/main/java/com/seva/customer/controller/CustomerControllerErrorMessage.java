@@ -1,4 +1,4 @@
-package academy.digitallab.store.customer.controller;
+package com.seva.customer.controller;
 
 
 import lombok.Builder;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Getter @Setter @Builder
-public class ErrorMessage {
+public class CustomerControllerErrorMessage {
     private String code ;
     private List<Map<String, String >> messages ;
 }

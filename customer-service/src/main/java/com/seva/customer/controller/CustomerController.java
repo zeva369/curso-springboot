@@ -1,8 +1,8 @@
-package academy.digitallab.store.customer.controller;
+package com.seva.customer.controller;
 
-import academy.digitallab.store.customer.service.CustomerService;
-import academy.digitallab.store.customer.repository.entity.Customer;
-import academy.digitallab.store.customer.repository.entity.Region;
+import com.seva.customer.service.CustomerService;
+import com.seva.customer.repository.entity.Customer;
+import com.seva.customer.repository.entity.Region;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RestController
 @RequestMapping("/customers")
-public class CustomerRest {
+public class CustomerController {
 
     @Autowired
     CustomerService customerService;
@@ -118,7 +118,7 @@ public class CustomerRest {
                     return error;
 
                 }).collect(Collectors.toList());
-        ErrorMessage errorMessage = ErrorMessage.builder()
+        CustomerControllerErrorMessage errorMessage = CustomerControllerErrorMessage.builder()
                 .code("01")
                 .messages(errors).build();
         ObjectMapper mapper = new ObjectMapper();

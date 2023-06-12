@@ -1,7 +1,7 @@
-package academy.digitallab.store.customer.service;
+package com.seva.customer.service;
 
-import academy.digitallab.store.customer.repository.entity.Customer;
-import academy.digitallab.store.customer.repository.entity.Region;
+import com.seva.customer.repository.entity.Customer;
+import com.seva.customer.repository.entity.Region;
 
 import java.util.List;
 
