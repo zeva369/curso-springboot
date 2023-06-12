@@ -1,6 +1,6 @@
 package com.seva.serviceDemo1.service.service;
-import com.seva.serviceDemo1.service.entity.Product;
-import com.seva.serviceDemo1.service.entity.Category;
+import com.seva.serviceDemo1.service.repository.entity.Product;
+import com.seva.serviceDemo1.service.repository.entity.Category;
 
 import java.util.List;
 

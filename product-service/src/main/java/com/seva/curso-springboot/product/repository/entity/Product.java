@@ -1,4 +1,4 @@
-package com.seva.serviceDemo1.service.entity;
+package com.seva.serviceDemo1.service.repository.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -36,6 +36,6 @@ public class Product {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category")
     @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
-    private Category category;
+    private com.seva.serviceDemo1.service.repository.entity.Category category;
 
 }

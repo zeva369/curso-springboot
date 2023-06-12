@@ -1,7 +1,7 @@
 package com.seva.serviceDemo1.service;
 
-import com.seva.serviceDemo1.service.entity.Category;
-import com.seva.serviceDemo1.service.entity.Product;
+import com.seva.serviceDemo1.service.repository.entity.Category;
+import com.seva.serviceDemo1.service.repository.entity.Product;
 import com.seva.serviceDemo1.service.repository.ProductRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

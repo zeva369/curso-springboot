@@ -45,7 +45,7 @@ public class Customer implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
     @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
-    private Region region;
+    private com.seva.customer.repository.entity.Region region;
 
-    private String state;
+    private String status;
 }

@@ -2,8 +2,8 @@ package com.seva.serviceDemo1.service.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.seva.serviceDemo1.service.entity.Category;
-import com.seva.serviceDemo1.service.entity.Product;
+import com.seva.serviceDemo1.service.repository.entity.Category;
+import com.seva.serviceDemo1.service.repository.entity.Product;
 import com.seva.serviceDemo1.service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -87,7 +87,7 @@ public class ProductController {
                     return error;
                 })
                 .collect(Collectors.toList());
-        ProductControllerErrorMessage errMessage = ProductControllerErrorMessage
+        com.seva.serviceDemo1.service.controller.ProductControllerErrorMessage errMessage = com.seva.serviceDemo1.service.controller.ProductControllerErrorMessage
                 .builder()
                 .code("01")
                 .messages(errors).build();

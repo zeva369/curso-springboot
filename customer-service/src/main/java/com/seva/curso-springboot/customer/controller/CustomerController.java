@@ -118,7 +118,7 @@ public class CustomerController {
                     return error;
 
                 }).collect(Collectors.toList());
-        CustomerControllerErrorMessage errorMessage = CustomerControllerErrorMessage.builder()
+        com.seva.customer.controller.CustomerControllerErrorMessage errorMessage = com.seva.customer.controller.CustomerControllerErrorMessage.builder()
                 .code("01")
                 .messages(errors).build();
         ObjectMapper mapper = new ObjectMapper();

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Slf4j
 @Service
-public class CustomerServiceImpl  implements CustomerService {
+public class CustomerServiceImpl  implements com.seva.customer.service.CustomerService {
 
     @Autowired
     CustomerRepository customerRepository;
@@ -33,7 +33,7 @@ public class CustomerServiceImpl  implements CustomerService {
             return  customerDB;
         }
 
-        customer.setState("CREATED");
+        customer.setStatus("CREATED");
         customerDB = customerRepository.save ( customer );
         return customerDB;
     }
@@ -58,7 +58,7 @@ public class CustomerServiceImpl  implements CustomerService {
         if (customerDB ==null){
             return  null;
         }
-        customer.setState("DELETED");
+        customer.setStatus("DELETED");
         return customerRepository.save(customer);
     }
 

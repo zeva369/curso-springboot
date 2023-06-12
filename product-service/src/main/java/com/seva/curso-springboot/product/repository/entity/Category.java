@@ -1,4 +1,4 @@
-package com.seva.serviceDemo1.service.entity;
+package com.seva.serviceDemo1.service.repository.entity;
 
 import lombok.*;
 import javax.persistence.*;

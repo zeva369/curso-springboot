@@ -1,7 +1,7 @@
 package com.seva.serviceDemo1.service;
 
-import com.seva.serviceDemo1.service.entity.Category;
-import com.seva.serviceDemo1.service.entity.Product;
+import com.seva.serviceDemo1.service.repository.entity.Category;
+import com.seva.serviceDemo1.service.repository.entity.Product;
 import com.seva.serviceDemo1.service.repository.ProductRepository;
 import com.seva.serviceDemo1.service.service.ProductService;
 import com.seva.serviceDemo1.service.service.ProductServiceImpl;
@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
