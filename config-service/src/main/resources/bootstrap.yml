@@ -9,9 +9,12 @@ spring:
           uri: https://github.com/zeva369/curso-springboot.git
           searchPaths: config-data
           username: ${GIT_USER}
-          password: ${GIT_PWD}
+          password: ${GIT_PASSWORD}
+          default-label: "main"
   security:
     user: root
     password: s3cr3t
 
-
+#logging:
+#  level:
+#    root: DEBUG
