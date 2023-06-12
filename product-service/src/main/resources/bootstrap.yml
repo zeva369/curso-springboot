@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: product-service
+  cloud:
+    config:
+      import: config-server:http://localhost:8081
+      #uri: http://localhost:8081
+      user:
+        name: root
+        password: s3cr3t
