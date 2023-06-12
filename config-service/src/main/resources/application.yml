@@ -4,7 +4,9 @@ server:
 spring:
   cloud:
     config:
+      name: config-server
       server:
+        #port: 8081
         git:
           uri: https://github.com/zeva369/curso-springboot.git
           searchPaths: config-data
