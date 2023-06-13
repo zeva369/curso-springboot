@@ -3,7 +3,6 @@ spring:
     name: product-service
   cloud:
     config:
-      #import: config-server:http://localhost:8081
       uri: http://localhost:8081
       username: root
       password: s3cr3t
@@ -17,7 +16,7 @@ spring:
   #                                                                        en cloud.config -> username + password
   #                                  y finalmente en el config server:en cloud.config.server.git -> username + password
 
-  #boot:
-  #  admin:
-  #    client:
-  #      url: http://localhost:8086
+  boot:
+    admin:
+      client:
+        url: http://localhost:8086
