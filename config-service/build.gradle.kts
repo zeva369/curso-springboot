@@ -4,7 +4,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.0.15.RELEASE"
 }
 
-group = "com.seva"
+group = "com.seva.cursospringboot"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -19,7 +19,9 @@ dependencies {
 	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.cloud:spring-cloud-config-server")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.springframework.boot:spring-boot-starter-test"){
+		exclude ("org.junit.vintage",  "junit-vintage-engine")
+	}
 	testImplementation("org.springframework.security:spring-security-test")
 }
 
