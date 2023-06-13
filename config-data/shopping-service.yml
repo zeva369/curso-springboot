@@ -28,7 +28,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create-only #update
+      ddl-auto: update  #create-only 
     database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
@@ -39,15 +39,15 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
 
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8099/eureka/
-#Feign:
-#  hystrix:
-#    enabled: true
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+Feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

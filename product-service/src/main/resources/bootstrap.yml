@@ -3,8 +3,21 @@ spring:
     name: product-service
   cloud:
     config:
-      import: config-server:http://localhost:8081
-      #uri: http://localhost:8081
-      user:
-        name: root
-        password: s3cr3t
+      #import: config-server:http://localhost:8081
+      uri: http://localhost:8081
+      username: root
+      password: s3cr3t
+
+  #Nota: 12/06/2023: Tenía problemas porque product-service se conectaba al config-server pero
+  #                  no obtenía la información y cargaba en el puerto 8080 en lugar del 8091
+  #                  probé con user.name y user.password, luego con user y password pero finalmente funcionó
+  #                  con username y password. Es extraño porque en el config service tengo que ponerle
+  #                  user.name y user.password porque sino no funciona, aunque en ese caso esta bajo la propiedad
+  #                  spring.security y no spring.cloud.config. En resumen, en security -> user.name + user.password
+  #                                                                        en cloud.config -> username + password
+  #                                  y finalmente en el config server:en cloud.config.server.git -> username + password
+
+  #boot:
+  #  admin:
+  #    client:
+  #      url: http://localhost:8086
