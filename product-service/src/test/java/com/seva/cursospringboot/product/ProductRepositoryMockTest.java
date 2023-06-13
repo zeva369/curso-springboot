@@ -1,4 +1,4 @@
-package com.seva.cursospringboot.product
+package com.seva.cursospringboot.product;
 
 import com.seva.cursospringboot.product.repository.entity.Category;
 import com.seva.cursospringboot.product.repository.entity.Product;
