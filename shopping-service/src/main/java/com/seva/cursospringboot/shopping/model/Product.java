@@ -2,6 +2,8 @@ package com.seva.cursospringboot.shopping.model;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class Product {
     private Long id;
@@ -12,6 +14,8 @@ public class Product {
     private Double stock;
     private Double price;
     private String status;
+
+    private Date created;
 
     private Category category;
 }

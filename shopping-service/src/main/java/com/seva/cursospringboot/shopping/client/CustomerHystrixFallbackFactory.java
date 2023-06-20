@@ -4,6 +4,7 @@ import com.seva.cursospringboot.shopping.model.Customer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
+//Esto es para que se pueda hacer inyección de dependencia, como Bean
 @Component
 public class CustomerHystrixFallbackFactory  implements CustomerClient{
     @Override
