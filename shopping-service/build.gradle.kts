@@ -21,14 +21,19 @@ repositories {
 extra["springCloudVersion"] = "2021.0.7"
 
 dependencies {
-	//implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
-	//implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-	//implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
+	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+
+	implementation("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
+	//implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'
+	implementation (group: "org.springframework.cloud", name: "'spring-cloud-netflix-hystrix-dashboard", version: "2.2.2.RELEASE")
+
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
 	annotationProcessor("org.projectlombok:lombok")
