@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8081
-      username: root
+      username: root       #Este usuario y su clave son del config server, lo usará el servicio para comunicarse con el config server
       password: s3cr3t
 
   #Nota: 12/06/2023: Tenía problemas porque product-service se conectaba al config-server pero

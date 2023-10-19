@@ -1,3 +1,4 @@
+
 plugins {
 	java
 	id("org.springframework.boot") version "2.7.12"
@@ -28,7 +29,11 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+
+
 	//implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
+	implementation("de.codecentric","spring-boot-admin-starter-client",  "2.6.2")
+
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
 	annotationProcessor("org.projectlombok:lombok")

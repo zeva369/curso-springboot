@@ -28,6 +28,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+	implementation("de.codecentric","spring-boot-admin-starter-client",  "2.6.2")
+
 	//implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")

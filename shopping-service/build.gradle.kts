@@ -28,6 +28,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+	implementation("de.codecentric:spring-boot-admin-starter-client")
+	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
 	//implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'
